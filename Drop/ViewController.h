@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *cameraView;
+- (IBAction)switchCameras:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *cameraOverlayView;
 
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UIImageView *photoView;
 @end
 
