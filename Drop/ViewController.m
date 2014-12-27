@@ -107,6 +107,7 @@ UISwipeGestureRecognizer *swipeDropDown;
                      }];
 }
 
+
 -(void) swipeDropDown {
     if(self.photoView.image == nil) return; // If the image does not exist then dont animate it.
     
