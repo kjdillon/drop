@@ -24,7 +24,9 @@
 		323AFF171A3BCED900A1CD87 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323AFF161A3BCED900A1CD87 /* CoreMedia.framework */; };
 		323AFF191A3BCEE700A1CD87 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323AFF181A3BCEE700A1CD87 /* ImageIO.framework */; };
 		323AFF1B1A3BCEEE00A1CD87 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323AFF1A1A3BCEEE00A1CD87 /* QuartzCore.framework */; };
+		325683331A4F62D500F0648B /* FriendsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 325683321A4F62D500F0648B /* FriendsVC.m */; };
 		327E5ED41A42E39A00A8D4E9 /* FirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 327E5ED31A42E39A00A8D4E9 /* FirstVC.m */; };
+		32E030A31A622F8E00FCE340 /* Drop.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E030A21A622F8E00FCE340 /* Drop.m */; };
 		8807A74BDA3D7CF833CC6F74 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C772EBD609025F232DF2D5EC /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +67,12 @@
 		323AFF161A3BCED900A1CD87 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		323AFF181A3BCEE700A1CD87 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		323AFF1A1A3BCEEE00A1CD87 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		325683311A4F62D500F0648B /* FriendsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsVC.h; sourceTree = "<group>"; };
+		325683321A4F62D500F0648B /* FriendsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsVC.m; sourceTree = "<group>"; };
 		327E5ED21A42E39A00A8D4E9 /* FirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstVC.h; sourceTree = "<group>"; };
 		327E5ED31A42E39A00A8D4E9 /* FirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstVC.m; sourceTree = "<group>"; };
+		32E030A11A622F8E00FCE340 /* Drop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drop.h; sourceTree = "<group>"; };
+		32E030A21A622F8E00FCE340 /* Drop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drop.m; sourceTree = "<group>"; };
 		5744D595651E841DEDB17F2C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C772EBD609025F232DF2D5EC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E56D04DD61B47947C14A27 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +143,8 @@
 		323AFEE71A3BC80800A1CD87 /* Drop */ = {
 			isa = PBXGroup;
 			children = (
+				32E030A11A622F8E00FCE340 /* Drop.h */,
+				32E030A21A622F8E00FCE340 /* Drop.m */,
 				323AFEEC1A3BC80800A1CD87 /* AppDelegate.h */,
 				323AFEED1A3BC80800A1CD87 /* AppDelegate.m */,
 				327E5ED21A42E39A00A8D4E9 /* FirstVC.h */,
@@ -149,6 +157,8 @@
 				3225552F1A426F54005328D1 /* MakeProfileVC.m */,
 				323AFEEF1A3BC80800A1CD87 /* ViewController.h */,
 				323AFEF01A3BC80800A1CD87 /* ViewController.m */,
+				325683311A4F62D500F0648B /* FriendsVC.h */,
+				325683321A4F62D500F0648B /* FriendsVC.m */,
 				323AFEF21A3BC80800A1CD87 /* Main.storyboard */,
 				323AFEF51A3BC80800A1CD87 /* Images.xcassets */,
 				323AFEF71A3BC80800A1CD87 /* LaunchScreen.xib */,
@@ -328,7 +338,9 @@
 			files = (
 				323AFEF11A3BC80800A1CD87 /* ViewController.m in Sources */,
 				327E5ED41A42E39A00A8D4E9 /* FirstVC.m in Sources */,
+				325683331A4F62D500F0648B /* FriendsVC.m in Sources */,
 				323AFEEE1A3BC80800A1CD87 /* AppDelegate.m in Sources */,
+				32E030A31A622F8E00FCE340 /* Drop.m in Sources */,
 				322555301A426F54005328D1 /* MakeProfileVC.m in Sources */,
 				3225552D1A42588F005328D1 /* LoginVC.m in Sources */,
 				3225552A1A425879005328D1 /* SignUpVC.m in Sources */,

@@ -28,6 +28,40 @@
         [[NSUserDefaults standardUserDefaults] synchronize];
         [self performSegueWithIdentifier:@"fromFirst" sender:self];
     }
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    [self startDropAnimation];
+}
+
+#define O_BOB_HEIGHT 10
+-(void)startDropAnimation {
+    [self bobLogoUp];
+}
+
+-(void)bobLogoUp {
+    CGAffineTransform translate = CGAffineTransformMakeTranslation(0, -O_BOB_HEIGHT);
+    [UIView animateWithDuration:2.0
+                          delay:0.0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         self.OLogoImageView.transform = translate;
+                     }completion:^(BOOL finished){
+                         [self bobLogoDown];
+                     }];
+}
+
+-(void)bobLogoDown {
+    CGAffineTransform translate = CGAffineTransformMakeTranslation(0, O_BOB_HEIGHT);
+    [UIView animateWithDuration:2.0
+                          delay:0.0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         self.OLogoImageView.transform = translate;
+                     }completion:^(BOOL finished){
+                         [self bobLogoUp];
+                     }];
 }
 
 - (BOOL)prefersStatusBarHidden {

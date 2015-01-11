@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import <Firebase/Firebase.h>
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *cameraView;
 - (IBAction)switchCameras:(id)sender;

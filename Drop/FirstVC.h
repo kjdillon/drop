@@ -12,5 +12,7 @@
 @interface FirstVC : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UIButton *signupButton;
+@property (weak, nonatomic) IBOutlet UIImageView *DropLogoImageView;
 
+@property (weak, nonatomic) IBOutlet UIImageView *OLogoImageView;
 @end
